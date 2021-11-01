@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background: brown;
+}
+main{
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+text-decoration: none;
+
+}
+a:link{
+    color: aqua;
+}
+a:visited{
+    color: black;
+    font-size: 18px;
+}
+a:active{
+    color: yellow;
+}
+.box:first-child{
+    background: violet;
+}
+.box:last-child{
+    font-size: 20px;
+}
+.box:nth-child(2n){
+    background: wheat;
+}
+.box:first-child .box:nth-child(2){
+    background: blue;
+}
+.box:hover{
+    background: chartreuse;
+    transition: background 0.5s;
+}
+.element{
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.container{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: crimson;
+    left: 40%;
+    border-radius: 50%;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: darkblue;
+    left: 55%;
+    border-radius: 50%;
+}
